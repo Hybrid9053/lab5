@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 - Currency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Currency Converter</h1>
+  <p>Powered by <strong>Frankfurter API</strong></p>
+
+  <!-- Converter section -->
+  <div class="section">
+    <h2>Convert Amount</h2>
+    <label>Amount: <input type="number" id="amount" value="1" min="0.01" step="0.01"></label>
+    <label>From: <input type="text" id="baseCurrency" value="USD" maxlength="3" style="text-transform:uppercase"></label>
+    <label>To: <input type="text" id="targetCurrency" value="TZS" maxlength="3" style="text-transform:uppercase"></label>
+    <button id="convertBtn">Convert</button>
+    <p id="result"></p>
+    <p id="rateDate"></p>
+    <p id="errorMsg" class="error"></p>
+  </div>
+
+  <!-- Rates table section -->
+  <div class="section">
+    <h2>All Rates Table</h2>
+    <label>Base Currency: <input type="text" id="tableBase" value="USD" maxlength="3"></label>
+    <button id="tableBtn">Load Rates Table</button>
+    <div id="tableContainer"></div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
