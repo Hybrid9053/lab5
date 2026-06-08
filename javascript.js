@@ -1,6 +1,5 @@
 
-//Q1 - Currency Converter  (Frankfurter API)
-// Fetch & display on button click 
+
 document.getElementById('convertBtn').addEventListener('click', function () {
 
   //  TO Read the user's inputs
